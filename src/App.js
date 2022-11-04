@@ -40,7 +40,7 @@ const App = () => {
     <Router>
       <Routes>
         <Route path="/" element={
-          <fragment>
+          <div>
 <           SearchContext.Provider value={{
             term: searchInput,
             handleSearch: handleSearch
@@ -51,7 +51,7 @@ const App = () => {
           <DataContext.Provider value={data} >
           <Gallery />
           </DataContext.Provider>
-          </fragment>
+          </div>
         }/>
           <Route path="/album/:id" element={<AlbumView />}/>
           <Route path="/artist/:id" element={<ArtistView />} />
