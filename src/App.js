@@ -8,6 +8,7 @@ import ArtistView from './components/artistview'
 
 import { DataContext } from './context/DataContext'
 import {SearchContext} from './context/SearchContext'
+import { createResource as fetchData } from './helper'
 
 
 const App = () => {
